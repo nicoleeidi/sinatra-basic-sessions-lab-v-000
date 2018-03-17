@@ -6,7 +6,7 @@ class App < Sinatra::Base
   set :session_secret, "secret"
 end
 get '/' do
-  session[:item]=params[:ite]
+  session[:item]=params[:item]
   erb :index
 end
 end
